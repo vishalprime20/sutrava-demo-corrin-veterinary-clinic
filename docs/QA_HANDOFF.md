@@ -1,54 +1,56 @@
+# Website QA handoff packet — Corrin Veterinary Clinic
+
 ## QA handoff — Corrin Veterinary Clinic
 
 ### Links
 - **repository_url:** https://github.com/vishalprime20/sutrava-demo-corrin-veterinary-clinic
 - **demo_url:** https://vishalprime20.github.io/sutrava-demo-corrin-veterinary-clinic/
 - **Lead ID:** SUT-LEAD-20260812-0001
-- **Paperclip issue:** [SUT-115](/SUT/issues/SUT-115)
+- **Customer Interest:** DEMO_REQUESTED
+- **Demo Required:** TRUE
+- **Paperclip issue:** SUT-115 → QA [SUT-116](/SUT/issues/SUT-116)
 
 ### Build
-- **build_status:** PASS
-- **build_command:** `npm test` and `SUTRAVA_STRICT=1 npm test`
-- **pages_workflow:** PENDING (fill after Actions run)
-- **commit_sha:** `bf062e4a3917e743b0ea5a99b50c1b2528e821fe`
+- **build_status:** PASS (local `npm test` + `SUTRAVA_STRICT=1 npm test`)
+- **build_command:** npm test / SUTRAVA_STRICT=1 npm test
+- **pages_workflow:** `.github/workflows/pages.yml` (GitHub Actions → github-pages)
 
 ### Verified facts used on the page
 | Field | Value | Source |
 |-------|-------|--------|
-| Business name | Corrin Veterinary Clinic | research SUT-61 + corrinvets.ie |
-| Category | Independent mixed veterinary clinic (companion + equine) | research / about |
-| City / region | Fermoy, Co. Cork, Ireland | research / contact |
-| Services shown | Companion medicine/surgery/diagnostics; equine emergency; pre-sale vetting; shockwave; lameness; digital X-ray; ultrasound; endoscopy; surgery | research + about/services |
-| Phone | +353 25 32766 (clinic & emergencies) | contact page |
-| Email | corrinvet@gmail.com | contact page |
-| Address | Cork Road, Corrin, Fermoy, Co. Cork | contact page |
-| Team | Sean O’Sullivan (owner/vet); Olivia Peters (vet) | about page |
+| Business name | Corrin Veterinary Clinic | SUT-61 research-batch |
+| Category | Independent mixed veterinary clinic (companion + equine) | research |
+| City / region | Fermoy, Co. Cork, Ireland | research |
+| Address | Cork Road, Corrin, Fermoy, Co. Cork | research |
+| Phone | +353 25 32766 (clinic + emergencies) | research / corrinvets.ie/contact |
+| Email | corrinvet@gmail.com | research |
+| Leadership | Sean O'Sullivan; assisted by Olivia Peters | research |
+| Local tenure | 30+ years (Sean O'Sullivan) | research |
+| Services | Companion medicine/surgery/diagnostics; equine emergency; pre-sale vetting; shockwave; lameness; digital X-ray; ultrasound; endoscopy | research |
 | Existing website | https://corrinvets.ie/ (unfinished template) | research |
 
 ### Explicitly omitted (UNKNOWN / unverified)
-- Social links (Facebook on live site points to unrelated Youghal café — not used)
 - Google Business URL
-- Opening hours
-- Ratings / review counts (not shown on demo)
+- On-page rating / review count (directory figures not used as social proof)
+- Social links
+- Opening-hours table beyond “clinic and emergencies share the same number”
+- Awards, capacity stats, fabricated testimonials
 
 ### Customization notes (why this is not a clone)
-- Tokens / color direction: Cork mist pasture — hedgerow green, linen paper, clinic teal accent (not mould-shop steel/amber or starter copper)
-- Typography: Literata display + Figtree body
-- Hero / visual idea: Full-bleed Fermoy countryside mist / pasture CSS atmosphere (no stock pet photos)
-- CTA wording: Call clinic / Email the clinic (verified phone & email)
+- Tokens / color: woodland ink + meadow green on cool mist paper (not mould amber; not packaging cyan)
+- Typography: Fraunces + Figtree
+- Layout: companion/equine care lanes + diagnostics grid (not cavity-grid / film stack)
+- Hero visual: Cork-hills SVG horizon + mist wash
+- CTA wording: Call clinic / Email the clinic with verified IE contacts
 
 ### Builder self-test notes
-- [x] Mobile ~375px layout OK (CSS responsive primitives; QA to confirm in browser)
-- [x] Desktop layout OK (CSS; QA to confirm)
-- [x] CTA click/tap targets work (`tel:` / `mailto:`)
-- [x] No console errors on load (static; no third-party JS beyond fonts)
-- [x] No broken images/links (no `<img>`; Sutrava credit plain text only)
 - [x] No fake reviews/awards/stats
-- [x] No lorem / SAMPLE leftover
-- [x] No secrets or HTML comments with internal notes
+- [x] No lorem / SAMPLE leftover in HTML
+- [x] Local self-test PASS (strict)
+- [x] Pages publish prepared (Actions workflow + og:url/canonical)
+- [ ] Mobile ~375px layout OK (QA)
+- [ ] Desktop layout OK (QA)
+- [ ] Live Pages assets 200 (QA)
 
 ### Requested QA outcome
-Please return **QA APPROVED** or **QA FAILED** with checklist evidence (build, console, links, images, mobile, desktop, CTA, contact accuracy, no fakes, Pages live).
-
-On FAIL: leave comments on the issue; Builder will fix and re-submit.
-On APPROVED: notify Outreach path + CRM — **Builder does not email the prospect**.
+Please return **QA APPROVED** or **QA FAILED** with checklist evidence on [SUT-116](/SUT/issues/SUT-116).

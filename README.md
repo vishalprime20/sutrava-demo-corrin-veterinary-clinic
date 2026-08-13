@@ -1,28 +1,26 @@
 # sutrava-demo-corrin-veterinary-clinic
 
-Personalized Sutrava demo website for **Corrin Veterinary Clinic** (Cork Road, Corrin, Fermoy, Co. Cork, Ireland).
+Personalized Sutrava demo website for **Corrin Veterinary Clinic** (Fermoy, Co. Cork).
 
 | Field | Value |
 |-------|-------|
 | Lead ID | `SUT-LEAD-20260812-0001` |
-| Customer Interest | DEMO_REQUESTED |
-| Demo Required | TRUE |
+| Customer Interest | DEMO_REQUESTED (verified YES on SUT-113) |
 | Paperclip issue | SUT-115 |
 | repository_url | https://github.com/vishalprime20/sutrava-demo-corrin-veterinary-clinic |
 | demo_url | https://vishalprime20.github.io/sutrava-demo-corrin-veterinary-clinic/ |
 
 ## Verified facts only
 
-- Phone (clinic & emergencies): +353 25 32766
+- Phone: +353 25 32766 (clinic and emergencies)
 - Email: corrinvet@gmail.com
 - Address: Cork Road, Corrin, Fermoy, Co. Cork
-- Team: Sean O’Sullivan (practice owner and veterinarian); Olivia Peters (veterinarian)
-- Services: companion animal medicine/surgery/diagnostics; equine emergency care; pre-sale vetting; shockwave; lameness exams; digital X-ray; ultrasound; endoscopy
-- Existing site: https://corrinvets.ie/ (unfinished template — not used as design source)
+- Category: Independent mixed veterinary clinic (companion + equine)
+- Leadership: Sean O'Sullivan (owner-veterinarian, 30+ years locally); assisted by Olivia Peters
+- Services: companion medicine/surgery/diagnostics; equine emergency care; pre-sale vetting; shockwave; lameness exams; digital X-ray; ultrasound; endoscopy
+- Existing site: https://corrinvets.ie/ (unfinished template — this demo is the modernization concept)
 
-Omitted as UNKNOWN / unverified for this demo: social links, Google Business URL, opening hours, ratings/reviews on the page.
-
-No invented reviews, awards, ratings, or statistics.
+No invented reviews, awards, ratings, or capacity stats.
 
 ## Checks
 

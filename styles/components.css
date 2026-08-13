@@ -229,6 +229,10 @@
   color: var(--color-paper-elevated);
 }
 
+.cta-band .eyebrow {
+  color: var(--color-mist);
+}
+
 .cta-band h2 {
   font-size: var(--text-xl);
   max-width: 18ch;
