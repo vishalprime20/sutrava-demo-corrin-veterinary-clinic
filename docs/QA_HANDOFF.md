@@ -14,6 +14,8 @@
 - **build_status:** PASS (local `npm test` + `SUTRAVA_STRICT=1 npm test`)
 - **build_command:** npm test / SUTRAVA_STRICT=1 npm test
 - **pages_workflow:** `.github/workflows/pages.yml` (GitHub Actions → github-pages)
+- **commit_sha:** `cc870b61d2fe91c0d551f4b0025bfdaab5ea8008`
+- **pages_deploy:** Deploy GitHub Pages **success** for tip (`cc870b6`); live demo HTTP 200
 
 ### Verified facts used on the page
 | Field | Value | Source |
