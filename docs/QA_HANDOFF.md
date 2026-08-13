@@ -10,7 +10,7 @@
 - **build_status:** PASS
 - **build_command:** `npm test` and `SUTRAVA_STRICT=1 npm test`
 - **pages_workflow:** PENDING (fill after Actions run)
-- **commit_sha:** PENDING
+- **commit_sha:** `bf062e4a3917e743b0ea5a99b50c1b2528e821fe`
 
 ### Verified facts used on the page
 | Field | Value | Source |
