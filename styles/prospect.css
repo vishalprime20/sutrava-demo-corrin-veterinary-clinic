@@ -1,0 +1,43 @@
+/*
+  prospect.css — Corrin Veterinary Clinic specific refinements
+*/
+
+.brand span {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+  margin-top: 0.15rem;
+}
+
+@media (max-width: 520px) {
+  .brand span {
+    display: none;
+  }
+}
+
+.hero h1 {
+  font-variation-settings: "SOFT" 40, "WONK" 0.4;
+}
+
+.care-note {
+  margin-top: var(--space-5);
+  padding: var(--space-4) var(--space-5);
+  border-left: 3px solid var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent-soft) 55%, var(--color-paper-elevated));
+  max-width: 40rem;
+  color: var(--color-ink-soft);
+  font-size: var(--text-sm);
+}
+
+.hours-note {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-mist);
+  margin-top: var(--space-4);
+}

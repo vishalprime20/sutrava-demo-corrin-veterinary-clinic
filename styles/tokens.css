@@ -1,0 +1,67 @@
+/*
+  tokens.css — Corrin Veterinary Clinic (Fermoy, Co. Cork)
+  Irish mixed practice: cool mist paper, woodland ink, meadow accent.
+  Distinct from mould-shop amber and packaging cyan demos.
+*/
+
+:root {
+  --color-ink: #14241c;
+  --color-ink-soft: #4a5c52;
+  --color-paper: #e9eef1;
+  --color-paper-elevated: #f5f8f9;
+  --color-line: rgba(20, 36, 28, 0.12);
+  --color-accent: #2f6b4f;
+  --color-accent-deep: #1f4a36;
+  --color-accent-soft: rgba(47, 107, 79, 0.14);
+  --color-hero-wash-a: #1a3a2c;
+  --color-hero-wash-b: #0b1611;
+  --color-hero-grain: rgba(196, 214, 188, 0.12);
+  --color-mist: #9bb0a3;
+  --color-equine: #6b5a3e;
+
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  --font-body: "Figtree", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+  --text-md: 1.0625rem;
+  --text-lg: clamp(1.25rem, 1.1rem + 0.55vw, 1.45rem);
+  --text-xl: clamp(1.85rem, 1.35rem + 1.6vw, 2.85rem);
+  --text-hero: clamp(2.55rem, 1.65rem + 3.4vw, 4.35rem);
+
+  --leading-tight: 1.08;
+  --leading-snug: 1.35;
+  --leading-body: 1.62;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+
+  --radius-sm: 0.2rem;
+  --radius-md: 0.4rem;
+  --radius-lg: 0.75rem;
+
+  --shadow-soft: 0 24px 50px rgba(11, 22, 17, 0.22);
+  --max-width: 70rem;
+  --header-h: 4rem;
+
+  --ease-out: cubic-bezier(0.2, 0.9, 0.25, 1);
+  --dur-fast: 160ms;
+  --dur-med: 480ms;
+  --dur-slow: 1200ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 1ms;
+    --dur-med: 1ms;
+    --dur-slow: 1ms;
+  }
+}
