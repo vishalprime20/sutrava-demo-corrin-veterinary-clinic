@@ -1,5 +1,6 @@
 /*
-  prospect.css — Corrin Veterinary Clinic specific refinements
+  prospect.css — Corrin Veterinary Clinic (Fermoy mixed practice)
+  Atmosphere: Cork mist pasture, clinic calm, equine lane accent.
 */
 
 .brand span {
@@ -19,8 +20,85 @@
   }
 }
 
+.hero__mist {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 18% 72%, rgba(155, 176, 163, 0.28), transparent 42%),
+    radial-gradient(ellipse at 78% 18%, rgba(196, 214, 188, 0.16), transparent 46%),
+    linear-gradient(105deg, transparent 0 56%, rgba(47, 107, 79, 0.14) 56% 57%, transparent 57%);
+  animation: mist-drift var(--dur-slow) var(--ease-out) both;
+}
+
+.hero__horizon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  max-height: 42%;
+  object-fit: cover;
+  object-position: center bottom;
+  pointer-events: none;
+  opacity: 0.72;
+  z-index: 0;
+  animation: field-rise var(--dur-slow) var(--ease-out) both;
+}
+
 .hero h1 {
   font-variation-settings: "SOFT" 40, "WONK" 0.4;
+  max-width: 14ch;
+}
+
+.hours-note {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-mist);
+  margin-top: var(--space-4);
+}
+
+.lane-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-4);
+}
+
+@media (min-width: 720px) {
+  .lane-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-5);
+  }
+}
+
+.lane {
+  padding: var(--space-5);
+  background: var(--color-paper-elevated);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  border-top: 3px solid var(--color-accent);
+}
+
+.lane--equine {
+  border-top-color: var(--color-equine);
+}
+
+.lane h3 {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 650;
+}
+
+.lane p {
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-size: var(--text-sm);
 }
 
 .care-note {
@@ -33,11 +111,133 @@
   font-size: var(--text-sm);
 }
 
-.hours-note {
+.section--field {
+  background:
+    linear-gradient(180deg, rgba(47, 107, 79, 0.08), transparent 42%),
+    var(--color-paper);
+  border-block: 1px solid var(--color-line);
+}
+
+.diag-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-3);
+}
+
+@media (min-width: 720px) {
+  .diag-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.diag-list li {
+  padding: var(--space-5);
+  background: var(--color-paper-elevated);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+}
+
+.diag-list h3 {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 650;
+}
+
+.diag-list p {
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-size: var(--text-sm);
+}
+
+.practice-panel {
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-line);
+  background:
+    linear-gradient(160deg, rgba(47, 107, 79, 0.12), transparent 55%),
+    var(--color-paper-elevated);
+  box-shadow: var(--shadow-soft);
+  min-height: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: var(--space-4);
+  animation: panel-in var(--dur-slow) var(--ease-out) both;
+}
+
+.practice-panel__label {
   font-family: var(--font-mono);
   font-size: var(--text-xs);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-mist);
-  margin-top: var(--space-4);
+  color: var(--color-ink-soft);
+  margin: 0;
+}
+
+.practice-panel p {
+  margin: 0;
+  color: var(--color-ink);
+}
+
+.practice-panel a {
+  color: var(--color-accent-deep);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.practice-panel a:hover {
+  text-decoration: underline;
+}
+
+.cta-band .btn--ghost {
+  border-color: rgba(245, 248, 249, 0.45);
+  color: var(--color-paper-elevated);
+}
+
+.cta-band .btn--ghost:hover {
+  background: rgba(245, 248, 249, 0.1);
+}
+
+@keyframes mist-drift {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes field-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 0.72;
+    transform: none;
+  }
+}
+
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__mist,
+  .hero__horizon,
+  .practice-panel {
+    animation: none;
+  }
 }
